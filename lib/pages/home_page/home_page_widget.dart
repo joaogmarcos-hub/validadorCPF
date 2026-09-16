@@ -200,7 +200,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                     ),
                     FFButtonWidget(
                       onPressed: () async {
-                        if (functions.validacpf('')) {
+                        if (functions.validacpf(
+                            _model.textFieldCpfTextController.text)) {
                           await showDialog(
                             context: context,
                             builder: (alertDialogContext) {
